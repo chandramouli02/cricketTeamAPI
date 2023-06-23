@@ -1,0 +1,33 @@
+GET  http:localhost:3001/movies/
+
+###
+
+GET http://localhost:3001/movies/300/
+
+###
+post http://localhost:3001/movies/
+Content-Type: application/json
+
+{ 
+  "movie_id": 300,
+  "director_id": 6,
+  "movie_name": "Jurassic Park",
+  "lead_actor": "Luffy"
+}
+
+###
+
+put http://localhost:3001/movies/300/
+Content-Type: application/json
+
+{ "movie_id": 300,
+  "director_id": 6,
+  "movie_name": "Jurassic Park",
+  "lead_actor": "sanji"
+}
+
+###
+DELETE http://localhost:3001/movies/300/
+
+
+###
